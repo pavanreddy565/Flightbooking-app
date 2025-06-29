@@ -31,7 +31,7 @@ const Navbar = () => {
         {usertype === 'customer' ? 
         
         <>
-            <h3 >MS Flights</h3>
+            <h3 >Flight Finder</h3>
 
             <div className="nav-options" >
 
@@ -44,7 +44,7 @@ const Navbar = () => {
             :  usertype === 'admin' ?
 
                     <>
-                        <h3 >MS Flights (Admin)</h3>
+                        <h3 >Flight Finder (Admin)</h3>
                         <div className="nav-options" >
 
                             <p onClick={()=>navigate('/admin')}>Home</p>
@@ -57,7 +57,7 @@ const Navbar = () => {
             
                 : usertype === 'flight-operator' ?
                     <>
-                        <h3 >MS Flights (Operator)</h3>
+                        <h3 >Flight Finder (Operator)</h3>
                         <div className="nav-options" >
 
                             <p onClick={()=>navigate('/flight-admin')}>Home</p>
